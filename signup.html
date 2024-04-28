@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Đăng kí</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div  class="wrapper">
+	<form id="form-signup">
+		<h1>Signup</h1>
+
+		<div class="input-box">
+			<input type="text" placeholder="Nhập tên đăng nhập" id="username" >
+			<i class='bx bxs-user'></i>
+			<div id="error_text" class="error"></div>
+	    </div>
+	    
+
+	    <div class="input-box">
+			<input type="password" name="" placeholder="Nhập mật khẩu" id="password" >
+			<i class='bx bxs-lock-alt'></i>
+			<div id="error_password" class="error"></div>
+		</div>
+
+
+		<div class="input-box">
+			<input type="password" name="" placeholder="Nhập lại mật khẩu" id="password1" >
+			<i class='bx bxs-lock-alt'></i>
+			<div id="error_password1" class="error"></div>
+		</div>
+		
+		
+		<button type="submit" class="btn" id="signup">Đăng kí</button><br><br>
+
+		<div class="loginlink">
+			<a href="login.html" id="login">Đăng nhập</a>
+		</div>
+	</form>
+</div>
+<script type="text/javascript" src="signup.js"></script>
+</body>
+</html>

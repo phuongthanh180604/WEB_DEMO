@@ -1,0 +1,112 @@
+*{
+	margin: 0px;
+	font-family: arial;
+}
+@font-face{
+	font-family: abc;
+	src: url('font.ttf');
+}
+#menu{
+	width: 100%;
+	height: 40px;
+	font-size: 15px;
+	background: white;
+	color: #003366;
+	font-weight: bold;
+	line-height: 40px;
+	text-align: center;
+	position: relative;
+
+}
+#home{
+	width: 100px;
+	height: 40px;
+	background: #003366;
+	color: white;
+	position: absolute;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#intro_menu{
+	width: 130px;
+	height: 40px;
+	border-right: 2px solid #003366;
+	position: absolute;
+	left: 100px;
+	color: #003366;
+}
+#contact_menu{
+	width: 130px;
+	height: 40px;
+	border-right:2px solid #003366;
+	position: absolute;
+	left: 231px;
+	color:#003366;
+}
+#name{
+	width: 200px;
+	height: 40px;
+	border-left: 2px solid #003366;
+	position: absolute;
+	right: 0px;
+	color: #003366;
+}
+#change-password,#exit{
+	width: 200px;
+	height: 40px;
+	color: #003366;
+	background: white;
+	border-top: 2px solid #003366;
+}
+#menu2{
+	display: none;
+}
+#name:hover> #menu2{
+	display: block;
+}
+#name:hover{
+	background: #003366;
+	color: white;
+	border-left: none;
+}
+#change-password:hover,#exit:hover{
+	border-top: 1px solid white;
+	background: #003366;
+	color: white;
+}
+table, td {
+	border:2px solid ;
+	border-collapse:collapse;
+	border-color: #FF9900;     
+}
+table{
+	width: 100%;
+}
+#noidung{
+	width: 80%;
+	padding-top: 50px;
+	margin-left: 10%;
+}
+#title{
+	font-size: 40px;
+	font-weight: bold;
+	font-family: abc;
+	color: #FF9900;
+}
+#select{
+	width: 100%;
+	height: 40px;
+	font-size: 15px;
+}
+#chitiet{
+	width: 60%;
+	min-height: 300px;
+	background: white;
+	position: fixed;
+	top: 100px;
+	left: 20%;
+	border: 1px solid black;
+	padding: 30px;
+	display: none;
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css_question.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div id="menu">
+	<a href="home.html"><div id="home">Trang chủ</div></a>
+	<a href="#gioithieu"><div id="intro_menu">Giới thiệu</div></a>
+	<a href="home.html#gioithieu" ><div id="contact_menu">Liên hệ</div></a>
+	<div id="name"><p id="name1">username</p>
+		<div id="menu2">
+			<a href="change_password.html" style="text-decoration: none"><div id="change-password">Đổi mật khẩu</div></a>
+			<a href="login.html" style="text-decoration: none"><div id="exit">Đăng xuất</div></a>
+		</div>
+	</div>
+</div>
+<div id="noidung">
+	<div style="font-size: 18px;">Lựa chọn dạng câu hỏi</div><br>
+	<select id="select">
+		<option value="op1">Lựa chọn dạng câu hỏi</option>
+		<option value="Chọn đáp án">Câu hỏi đáp án</option>
+		<option value="Điền đáp án">Câu hỏi điền</option>
+	</select>
+	<br><br>
+	<div id="qs">
+		<br><br><br><br>
+	</div>
+
+	<div >
+		<input style="width:100%; display: none;" placeholder="Nhập số đáp án" id="gtri" ></input>
+		<button id="btn" style="display: none;">OK</button>
+	</div><br>
+
+	<div id="optionsDiv"style="display: none;">
+	</div>
+
+	<div id="correctAnswer">
+	</div>
+	
+	<button id="submit">Thêm câu hỏi</button>
+	
+	<br>
+	<br>
+	
+	<p id="title" style="text-align: center">Danh sách các câu hỏi đã thêm</p>
+	<br>
+		<table cellpadding="10px" id="table">
+			<tr>
+				<td>STT</td>
+				<td>Câu hỏi</td>
+				<td>Loại câu hỏi</td>
+				<td>Người thêm</td>
+				<td>Thời gian thêm</td>
+				<td>Trạng thái</td>
+				<td>Chỉnh sửa</td>
+				<td>Xóa</td>
+			</tr>
+	</table>
+
+</div>
+<div id="chitiet">
+	<div id="cauhoi"></div><br>
+	<div id="dapan"></div>
+	<div id="dapandung"></div>
+	<center><button id="thoat">Thoát</button></center>
+</div>
+<script type="text/javascript" src="css_question.js"></script>
+</body>
+</html>

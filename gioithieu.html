@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webQuiz - Trắc nghiệm trực tuyến</title>
+  <link rel="stylesheet" type="text/css" href="gioithieu.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!--menu-->
+<div id="menu">
+  <a href="home.html"><div id="home">Trang chủ</div></a>
+  <a href="gioithieu.html"><div id="intro_menu">Giới thiệu</div></a>
+  <a href="contact.html" ><div id="contact_menu">Liên hệ</div></a>
+  
+</div>
+
+<!--Gioi thieu-->
+<section class="title">
+    <div class="noidung">
+      <h2>Trắc nghiệm trực tuyến dành cho học sinh và giáo viên</h2>
+      <p>WebQuiz là một ứng dụng trắc nghiệm trực tuyến được thiết kế để giúp học sinh và giáo viên tạo và làm các bài trắc nghiệm một cách nhanh chóng và dễ dàng.</p>
+      <a href="#" class="cta-button">Bắt đầu ngay</a>
+    </div>
+  </section>
+
+<section class="features">
+    <div class="noidung">
+      <h2>Tính năng của WebQuiz</h2>
+      <div class="feature">
+        <img src="taoquiz.png" alt="Tạo quiz">
+        <h3>Tạo đề trắc nghiệm</h3>
+        <p>Tạo các đề trắc nghiệm với nhiều loại câu hỏi khác nhau và lưu trữ chúng trên tài khoản của bạn.</p>
+      </div>
+      <div class="feature">
+        <img src="lamquiz.jpg" alt="Làm bài trắc nghiệm">
+        <h3>Làm bài trắc nghiệm</h3>
+        <p>Làm các bài trắc nghiệm và xem kết quả ngay lập tức. Lưu lại lịch sử làm bài của bạn để theo dõi tiến độ học tập.</p>
+      </div>
+      <div class="feature">
+        <img src="sharequiz.png" alt="Chia sẻ đề trắc nghiệm">
+        <h3>Chia sẻ đề trắc nghiệm</h3>
+        <p>Chia sẻ các đề trắc nghiệm của bạn với học sinh hoặc giáo viên khác. Họ có thể làm bài trực tuyến hoặc tải xuống để in ra.</p>
+      </div>
+    </div>
+  </section>
+
+<section class="phanhoi">
+    <div class="noidung">
+      <h2>Phản hồi của học viên, giáo viên</h2>
+      
+      <div class="phanhoi-slider">
+        <div class="phanhoi-slide">
+          <p class="phanhoi-text">"May mắn biết đến WebQuiz ngay từ hồi năm nhất, lúc này có nhiều môn đại cương thi trắc nghiệm, mà học thuộc với em là điều không thể, em đã mày mò tự tạo đề và thi trên đây. Em rất hài lòng với điểm số đạt được. WebQuiz rất hữu ích với em."</p>
+          <img class="phanhoi-image" src="2.jpg" alt="Person's Name">
+        </div>
+        
+        <div class="phanhoi-slide">
+          <p class="phanhoi-text">"WebQuiz khá tiện ích, tôi có thể tạo đề nhanh cho lớp học của mình. Đây cũng là tài liệu tôi có thể truyền đạt lại cho khoá sau mà không cần phải làm lại."</p>
+          <img class="phanhoi-image" src="1.jpg" alt="Person's Name">
+        </div>
+      </div>
+
+      <div class="phanhoi-controls">
+        <button class="prev" onclick="plusSlide(-1)">Previous</button>
+        <button class="next" onclick="plusSlide(1)">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="noidung">
+      <p>© 2023 WebQuiz. Sở hữu bởi Phương Thanh & Thuỳ Trang</p>
+    </div>
+  </footer>
+
+  <script src="gioithieu.js"></script>
+</body>
+</html>

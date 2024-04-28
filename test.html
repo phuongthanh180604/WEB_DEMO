@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Example</title>
+</head>
+<body>
+	<form>
+		<label for="question">Question:</label>
+		<input type="text" id="question" name="question"><br><br>
+		<label for="numAnswers">Number of Answers:</label>
+		<input type="number" id="numAnswers" name="numAnswers" min="1" max="10" onchange="createAnswerFields()"><br><br>
+		<div id="answerFields"></div>
+		<input type="submit" value="Submit">
+	</form>
+
+	<script>
+		function createAnswerFields() {
+			// Get the number of answers from the input field
+			var numAnswers = document.getElementById("numAnswers").value;
+
+			// Get the answerFields div
+			var answerFields = document.getElementById("answerFields");
+
+			// Remove any existing answer fields
+			while (answerFields.firstChild) {
+				answerFields.removeChild(answerFields.firstChild);
+			}
+
+			// Create new answer fields based on the number of answers
+			for (var i = 1; i <= numAnswers; i++) {
+				// Create a new input field for the answer
+				var answerInput = document.createElement("input");
+				answerInput.type = "text";
+				answerInput.name = "answer" + i;
+				answerInput.placeholder = "Answer " + i;
+
+				// Add the new input field to the answerFields div
+				answerFields.appendChild(answerInput);
+			}
+		}
+
+		// Save the form data to localStorage when the form is submitted
+		document.querySelector("form").addEventListener("submit", function(event) {
+			event.preventDefault();
+
+			// Get the form data
+			var question = document.getElementById("question").value;
+			var numAnswers = document.getElementById("numAnswers").value;
+			var answers = [];
+
+			for (var i = 1; i <= numAnswers; i++) {
+				var answer = document.getElementsByName("answer" + i)[0].value;
+				answers.push(answer);
+			}
+
+			// Save the form data to localStorage
+			localStorage.setItem("question", question);
+			localStorage.setItem("numAnswers", numAnswers);
+			localStorage.setItem("answers", JSON.stringify(answers));
+
+			// Display a message to the user
+			alert("Form data saved to localStorage!");
+		});
+	</script>
+</body>
+</html>

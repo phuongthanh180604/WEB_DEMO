@@ -1,0 +1,145 @@
+*{
+	margin: 0px;
+	font-family: arial;
+}
+@font-face{
+	font-family: abc;
+	src: url('font.ttf');
+}
+#menu{
+	width: 100%;
+	height: 40px;
+	font-size: 15px;
+	background: white;
+	color: #660066;
+	font-weight: bold;
+	line-height: 40px;
+	text-align: center;
+	position: relative;
+
+}
+#home{
+	width: 100px;
+	height: 40px;
+	background: #660066;
+	color: white;
+	position: absolute;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#intro_menu{
+	width: 130px;
+	height: 40px;
+	border-right: 2px solid #660066;
+	position: absolute;
+	left: 100px;
+	color: #660066;
+}
+#contact_menu{
+	width: 130px;
+	height: 40px;
+	border-right:2px solid #660066;
+	position: absolute;
+	left: 231px;
+	color:#660066;
+}
+#name{
+	width: 200px;
+	height: 40px;
+	border-left: 2px solid #660066;
+	position: absolute;
+	right: 0px;
+	color: #660066;
+}
+#change-password,#exit{
+	width: 200px;
+	height: 40px;
+	color: MediumVioletRed;
+	background: white;
+	border-top: 2px solid #660066;
+}
+#menu2{
+	display: none;
+}
+#name:hover> #menu2{
+	display: block;
+}
+#name:hover{
+	background: #660066;
+	color: white;
+	border-left: none;
+}
+#change-password:hover,#exit:hover{
+	border-top: 1px solid white;
+	background: #660066;
+	color: white;
+}
+body{
+	background: #000033;
+}
+#title{
+	font-family: abc;
+	display: flex;
+	margin-bottom: 80px;
+	justify-content: center;
+	font-size: 50px;
+	font-weight: 600;
+	color: white;
+	text-shadow: 0 0 20px black;
+}
+#noidung{
+	margin-top: 30px;
+	max-width: 1030px;
+	height: 100px;
+	padding-top: 40px;
+	border-radius: 20px;
+	background: url('topic_bg.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	box-shadow:0 0 30px white ;
+}
+
+.topic{
+	float: left;
+	margin: 20px;
+	padding-top: 20px;
+	width: 300px;
+	height: 280px;
+	border-radius: 20px;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	background: #660066 ;
+	box-shadow: 0 0 20px #CC00FF;
+}
+.topic i{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 100px;
+}
+.topic button{
+	width: 150px;
+	height: 45px;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	background: #CC00FF;
+	font-weight: 800;
+	font-size: 15px;
+	color: white;
+}
+
+
+#html_btn:hover,#css_btn:hover,#js_btn:hover{
+	background: white;
+	cursor: pointer;
+	box-shadow: 0 0 10px #FFFF33;
+	color: #660066;
+}
+
+#html_box:hover,#css_box:hover,#js_box:hover{
+	width: 320px;
+	height: 300px;
+	margin: 10px;
+	box-shadow:0 0 30px white ;
+}

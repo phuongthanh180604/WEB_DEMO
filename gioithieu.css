@@ -1,0 +1,169 @@
+/* menu */
+#menu{
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  background: white;
+  color: #003366;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+
+}
+#home{
+  width: 100px;
+  height: 40px;
+  background: #003366;
+  color: white;
+  position: absolute;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#intro_menu{
+  width: 130px;
+  height: 40px;
+  border-right: 2px solid #003366;
+  position: absolute;
+  left: 100px;
+  color: #003366;
+}
+#contact_menu{
+  width: 130px;
+  height: 40px;
+  border-right:2px solid #003366;
+  position: absolute;
+  left: 231px;
+  color:#003366;
+}
+
+
+/* noidung */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Styles for the title section */
+.title {
+  background-color: #f2f2f2;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.title h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.title p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #9400D3;
+}
+
+/* Styles for the features section */
+.features {
+  background-color: #bac;
+  padding: 100px 20px;
+}
+
+.features h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.feature img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.feature p {
+  font-size: 18px;
+  text-align: center;
+}
+
+
+/* Styles for the phanhoi section */
+.phanhoi {
+  background-color: #f2f2f2;
+  padding: 20px 20px;
+}
+
+.phanhoi h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* Styles for the phanhoi slider */
+.phanhoi-slider {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.phanhoi-slide {
+  display: none;
+}
+
+.phanhoi-text {
+  margin-left: 300px;
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+/* Styles for the phanhoi-controls */
+.phanhoi-controls {
+  margin-top: 20px;
+}
+
+.phanhoi-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+/* Styles for the footer */
+footer {
+  background-color: #333366 ;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Additional styling can be added as per design requirements */
